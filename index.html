@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Property Management</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Property Management</h1>
+
+    <!-- Form for Adding/Updating Properties -->
+    <form id="propertyForm">
+      <h2>Add/Edit Property</h2>
+      <input type="hidden" id="propertyId" />
+      <label for="itemName">Item Name:</label>
+      <input type="text" id="itemName" placeholder="Enter item name" required />
+
+      <label for="price">Price:</label>
+      <input type="number" id="price" placeholder="Enter price" required />
+
+      <label for="contact">Contact Info:</label>
+      <input type="text" id="contact" placeholder="Enter contact info" required />
+
+      <button type="submit" onclick="saveProperty()">Save Property</button>
+    </form>
+
+    <!-- List of Properties -->
+    <h2>Property List</h2>
+    <table id="propertyTable">
+      <thead>
+        <tr>
+          <th>Item Name</th>
+          <th>Price</th>
+          <th>Contact Info</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Rows will be dynamically added here -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
