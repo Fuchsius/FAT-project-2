@@ -1,0 +1,29 @@
+/* Custom styles for the navbar */
+.navbar {
+    background-color: #f8f9fa; 
+}
+.header-btn {
+    background-color: #2c3e50; 
+    color: white;
+}
+.header-cent-ul {
+    list-style: none;
+    max-width: 69vw;
+    width: 100%;
+}
+.header-search {
+    border-radius: 5px;
+    border: 1px solid #334155;
+    max-width: 50vw;
+    width: 100%;
+}
+.search-icon {
+    color: #334155;
+    font-size: 18px;
+    background-color: transparent; 
+    border-color: transparent;
+}
+.header-btn{
+    background-color: #334155 !important;
+    color: white !important;
+}
