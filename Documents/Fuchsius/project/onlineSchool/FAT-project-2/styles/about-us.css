@@ -1,0 +1,153 @@
+/* About Us Section Styles */
+.about-us-img {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.about-us-background {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.about-us-background img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about-us-background-overlap {
+  position: absolute;
+  width: 70%;
+  max-width: 300px;
+  bottom: -30px;
+  right: -30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.about-us-background-overlap img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about-us h3 {
+  color: #ff6b6b;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.about-us h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.about-us p {
+  color: #666;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.about-us ul {
+  padding-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.about-us li {
+  margin-bottom: 0.75rem;
+  position: relative;
+  padding-left: 0.5rem;
+}
+
+.about-us li::before {
+  content: "✓";
+  color: #ff6b6b;
+  position: absolute;
+  left: -1.2rem;
+}
+
+.about-us button {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.about-us button:hover {
+  background-color: #ff5252;
+}
+
+/* Responsive Styles */
+@media (max-width: 991.98px) {
+  .about-us h1 {
+    font-size: 1.8rem;
+  }
+  
+  .about-us-background-overlap {
+    width: 60%;
+    bottom: -20px;
+    right: -20px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .row.justify-content-center.align-items-center.g-4 {
+    flex-direction: column;
+  }
+  
+  .about-us-img, .about-us {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  
+  .about-us {
+    padding: 0 1rem;
+    margin-top: 3rem;
+  }
+  
+  .about-us h1 {
+    font-size: 1.6rem;
+  }
+  
+  .about-us-background-overlap {
+    width: 50%;
+    max-width: 200px;
+    bottom: -15px;
+    right: -15px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .about-us h3 {
+    font-size: 1rem;
+  }
+  
+  .about-us h1 {
+    font-size: 1.4rem;
+  }
+  
+  .about-us p, .about-us li {
+    font-size: 0.9rem;
+  }
+  
+  .about-us button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+  
+  .about-us-background-overlap {
+    width: 45%;
+    bottom: -10px;
+    right: -10px;
+  }
+}

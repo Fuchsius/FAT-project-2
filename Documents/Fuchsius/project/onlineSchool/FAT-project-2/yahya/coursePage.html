@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to User Experience Design</title>
+    <link rel="stylesheet" href="styles/coursePage.css" />
+    <link rel="stylesheet" href="styles/sharedStyle.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav-container">
+        <div class="nav-left">
+          <a href="/" class="logo">
+            <div class="logo-wrapper">
+              <img src="assets/logo.png" alt="Oracle Logo" />
+              <h1 class="logo-text">Oracle</h1>
+            </div>
+          </a>
+          <div class="categories">Categories</div>
+          <div class="search-bar">
+            <i class="fas fa-search search-icon"></i>
+            <input type="search" placeholder="Search courses" />
+          </div>
+        </div>
+        <div class="nav-right">
+          <a href="#" class="teach-link">Teach on Oracle</a>
+          
+          <div class="nav-icons">
+            <i class="far fa-heart"></i>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="far fa-bell"></i>
+            <div class="user-profile">J</div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="main-content-wrapper">
+      <main class="main-content">
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+          <a href="/">Home</a>
+          <a href="/categories">Categories</a>
+          <span>Introduction to User Experience Design</span>
+        </div>
+
+        <div class="course-container">
+          <div class="course-details">
+            <h1>Introduction to User Experience Design</h1>
+            <p class="course-description">
+              This course is meticulously crafted to provide you with a
+              foundational understanding of the principles, methodologies, and
+              tools that drive exceptional user experiences in the digital
+              landscape.
+            </p>
+
+            <div class="course-meta">
+              <div class="rating">
+                <span class="rating-text">4.6</span>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <span class="rating-count">(651651 rating)</span>
+              </div>
+              <span class="meta-divider">|</span>
+              <div class="course-info">
+                <span>22 Total Hours.</span>
+                <span>155 Lectures.</span>
+                <span>All levels.</span>
+              </div>
+            </div>
+
+            <div class="instructor-brief">
+              <img
+                src="assets/profile.png"
+                alt="Ronald Richards"
+                class="instructor-avatar"
+              />
+              <div class="instructor-link">
+                <span>Created by</span>
+                <a href="#" class="instructor-name-link">Ronald Richards</a>
+              </div>
+            </div>
+
+            <div class="course-languages">
+              <div class="language-icon">
+                <i class="fas fa-globe"></i>
+              </div>
+              <div class="language-list">
+                <span>English</span>
+                <span>Spanish</span>
+                <span>Italian</span>
+                <span>German</span>
+              </div>
+            </div>
+
+            <div class="nav-and-share">
+              <div class="course-nav-tabs">
+                <div class="tab-btn active" data-target="#description-section">
+                  Description
+                </div>
+                <div class="tab-btn" data-target="#instructor-section">
+                  Instructor
+                </div>
+                <div class="tab-btn" data-target="#syllabus-section">
+                  Syllabus
+                </div>
+                <div class="tab-btn" data-target="#reviews-section">
+                  Reviews
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="course-purchase">
+            <div class="preview-image">
+              <img src="assets/coursePRV.png" alt="Course Preview" />
+            </div>
+            <div class="price-container">
+              <div class="price">
+                <span class="current-price">$49.5</span>
+                <span class="actual-price strikethrough">$99.5</span>
+                <span class="discount">50% Off</span>
+              </div>
+              <button class="btn-add-to-cart">Add To Cart</button>
+              <button class="btn-buy-now">Buy Now</button>
+            </div>
+            <div class="share-section">
+              <span>Share</span>
+              <div class="social-icons">
+                <img src="./assets/icon/facebook.png" alt="Facebook" />
+                <img src="./assets/icon/github.png" alt="GitHub" />
+                <img src="./assets/icon/google.png" alt="Google" />
+                <img src="./assets/icon/x.png" alt="X" />
+                <img src="./assets/icon/microsoft.png" alt="Microsoft" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course Navigation and Content Sections -->
+        <div class="course-content-wrapper">
+          <!-- Course Description Section -->
+          <section
+            id="description-section"
+            class="course-description-section with-border"
+          >
+            <h2>Course Description</h2>
+            <p>
+              This interactive e-learning course will introduce you to User
+              Experience (UX) design, the art of creating products and services
+              that are intuitive, enjoyable, and user-friendly. Gain a solid
+              foundation in UX principles and learn to apply them in real-world
+              scenarios through engaging modules and interactive exercises.
+            </p>
+            <h2>Certification</h2>
+            <p>
+              At Oracle, we understand the significance of formal recognition
+              for your hard work and dedication to continuous learning. Upon
+              successful completion of our courses, you will earn a prestigious
+              certification that not only validates your expertise but also
+              opens doors to new opportunities in your chosen field.
+            </p>
+          </section>
+
+          <!-- Instructor Section -->
+          <section
+            id="instructor-section"
+            class="instructor-section with-border"
+          >
+            <h2>Instructor</h2>
+
+            <div class="instructor-info">
+              <h3>Ronald Richards</h3>
+              <p class="instructor-title">UX/UI Designer</p>
+            </div>
+
+            <div class="profile-stats">
+              <div class="instructor-header">
+                <img
+                  src="assets/profile.png"
+                  alt="Ronald Richards"
+                  class="instructor-img"
+                />
+              </div>
+
+              <div class="instructor-stats">
+                <div class="stat-item">
+                  <i class="fas fa-star"></i>
+                  <span>40,445 Reviews</span>
+                </div>
+                <div class="stat-item">
+                  <i class="fas fa-user-graduate"></i>
+                  <span>800 Students</span>
+                </div>
+                <div class="stat-item">
+                  <i class="fas fa-play-circle"></i>
+                  <span>15 Courses</span>
+                </div>
+              </div>
+            </div>
+            <p class="instructor-bio">
+              With over a decade of industry experience, Ronald brings a wealth
+              of practical knowledge to the classroom. He has played a pivotal
+              role in designing user-centric interfaces for renowned tech
+              companies, ensuring seamless and engaging user experiences.
+            </p>
+          </section>
+
+          <!-- Syllabus Section -->
+          <div id="syllabus-section" class="syllabus-section with-border">
+            <h2>Syllabus</h2>
+            <div class="accordion">
+              <div class="accordion-item">
+                <button class="accordion-title">
+                  <i class="fas fa-chevron-down icon"></i>
+                  <span>Introduction to UX Design</span>
+                  <span class="accordion-meta">5 Lessons • 1 hour</span>
+                </button>
+                <div class="accordion-content">
+                  <p>Lesson list or description goes here...</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button class="accordion-title">
+                  <i class="fas fa-chevron-down icon"></i>
+                  <span>Basics of User-Centered Design</span>
+                  <span class="accordion-meta">5 Lessons • 1 hour</span>
+                </button>
+                <div class="accordion-content">
+                  <p>Lesson list or description goes here...</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button class="accordion-title">
+                  <i class="fas fa-chevron-down icon"></i>
+                  <span>Elements of User Experience</span>
+                  <span class="accordion-meta">5 Lessons • 1 hour</span>
+                </button>
+                <div class="accordion-content">
+                  <p>Lesson list or description goes here...</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button class="accordion-title">
+                  <i class="fas fa-chevron-down icon"></i>
+                  <span>Visual Design Principles</span>
+                  <span class="accordion-meta">5 Lessons • 1 hour</span>
+                </button>
+                <div class="accordion-content">
+                  <p>Lesson list or description goes here...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Learner Reviews Section -->
+    <div id="reviews-section" class="review-overview">
+      <h3>Learner Reviews</h3>
+      <div class="two-child-grid">
+        <!-- child 1 -->
+        <div class="rating-breakdown">
+          <div class="overall-rating">
+            <span class="rating-number"><i class="fas fa-star"></i> 4.6</span>
+            <span class="review-count">146,951 reviews</span>
+          </div>
+          <div class="rating-line">
+            <span class="rating-star">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </span>
+            <span>80%</span>
+          </div>
+          <div class="rating-line">
+            <span class="rating-star">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+              <i class="fas fa-star gray"></i
+            ></span>
+            <span>10%</span>
+          </div>
+          <div class="rating-line">
+            <span class="rating-star"
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star gray"></i>
+              <i class="fas fa-star gray"></i>
+            </span>
+            <span>5%</span>
+          </div>
+          <div class="rating-line">
+            <span class="rating-star"
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star gray"></i> <i class="fas fa-star gray"></i>
+              <i class="fas fa-star gray"></i>
+            </span>
+            <span>3%</span>
+          </div>
+          <div class="rating-line">
+            <span class="rating-star"
+              ><i class="fas fa-star"></i> <i class="fas fa-star gray"></i>
+              <i class="fas fa-star gray"></i> <i class="fas fa-star gray"></i>
+              <i class="fas fa-star gray"></i>
+            </span>
+            <span>2%</span>
+          </div>
+        </div>
+        <!-- child 2 -->
+        <div class="review-list">
+          <!-- Review card 1 -->
+          <div class="review-card">
+            <div class="image-name">
+              <img
+                src="/assets/reiewProf.png"
+                class="avatar"
+                alt="User Avatar"
+              />
+              <strong>Mark Doe</strong>
+            </div>
+
+            <div class="review-content">
+              <div class="review-header">
+                <span class="stars"><i class="fas fa-star"></i> 5</span>
+                <span class="date">Reviewed on 22nd March, 2024</span>
+              </div>
+              <p>
+                I was initially apprehensive, having no prior design experience.
+                But the instructor, John Doe, did an amazing job of breaking
+                down complex concepts into easily digestible modules. The video
+                lectures were engaging, and the real-world examples really
+                helped solidify my understanding.
+              </p>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="image-name">
+              <img
+                src="/assets/reiewProf.png"
+                class="avatar"
+                alt="User Avatar"
+              />
+              <strong>Mark Doe</strong>
+            </div>
+            <div class="review-content">
+              <div class="review-header">
+                <span class="stars"><i class="fas fa-star"></i> 5</span>
+                <span class="date">Reviewed on 22nd March, 2024</span>
+              </div>
+              <p>
+                I was initially apprehensive, having no prior design experience.
+                But the instructor, John Doe, did an amazing job of breaking
+                down complex concepts into easily digestible modules. The video
+                lectures were engaging, and the real-world examples really
+                helped solidify my understanding.
+              </p>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="image-name">
+              <img
+                src="/assets/reiewProf.png"
+                class="avatar"
+                alt="User Avatar"
+              />
+              <strong>Mark Doe</strong>
+            </div>
+            <div class="review-content">
+              <div class="review-header">
+                <span class="stars"><i class="fas fa-star"></i> 5</span>
+                <span class="date">Reviewed on 22nd March, 2024</span>
+              </div>
+              <p>
+                I was initially apprehensive, having no prior design experience.
+                But the instructor, John Doe, did an amazing job of breaking
+                down complex concepts into easily digestible modules. The video
+                lectures were engaging, and the real-world examples really
+                helped solidify my understanding.
+              </p>
+            </div>
+          </div>
+
+          <button class="view-more">View more Reviews</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- testominials -->
+    <section class="testimonials">
+      <div class="testimonials-header">
+        <h2>What Our Customer Say<br />About Us</h2>
+        <div class="slider-controls">
+          <button class="prev-btn">‹</button>
+          <button class="next-btn">›</button>
+        </div>
+      </div>
+
+      <div class="testimonial-slider-wrapper">
+        <div class="testimonial-slider">
+          <div class="testimonial-card">
+            <i class="quote-icon">❝</i>
+            <p>
+              "Oracle's tech courses are top-notch! As someone who's always
+              looking to stay ahead in the rapidly evolving tech world, I
+              appreciate the up-to-date content and engaging multimedia.
+            </p>
+            <div class="user-info">
+              <img src="/assets/custProf.jpg" alt="Jane Doe" />
+              <div>
+                <h4>Jane Doe</h4>
+                <span>Designer</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <i class="quote-icon">❝</i>
+            <p>
+              "Oracle's tech courses are top-notch! As someone who's always
+              looking to stay ahead in the rapidly evolving tech world, I
+              appreciate the up-to-date content and engaging multimedia.
+            </p>
+            <div class="user-info">
+              <img src="/assets/custProf.jpg" alt="Jane Doe" />
+              <div>
+                <h4>Jane Doe</h4>
+                <span>Designer</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <i class="quote-icon">❝</i>
+            <p>
+              "Oracle's tech courses are top-notch! As someone who's always
+              looking to stay ahead in the rapidly evolving tech world, I
+              appreciate the up-to-date content and engaging multimedia.
+            </p>
+            <div class="user-info">
+              <img src="/assets/custProf.jpg" alt="Jane Doe" />
+              <div>
+                <h4>Jane Doe</h4>
+                <span>Designer</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <i class="quote-icon">❝</i>
+            <p>
+              "Oracle's tech courses are top-notch! As someone who's always
+              looking to stay ahead in the rapidly evolving tech world, I
+              appreciate the up-to-date content and engaging multimedia.
+            </p>
+            <div class="user-info">
+              <img src="/assets/custProf.jpg" alt="Jane Doe" />
+              <div>
+                <h4>Jane Doe</h4>
+                <span>Designer</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <i class="quote-icon">❝</i>
+            <p>
+              "Oracle's tech courses are top-notch! As someone who's always
+              looking to stay ahead in the rapidly evolving tech world, I
+              appreciate the up-to-date content and engaging multimedia.
+            </p>
+            <div class="user-info">
+              <img src="/assets/custProf.jpg" alt="Jane Doe" />
+              <div>
+                <h4>Jane Doe</h4>
+                <span>Designer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- course card list  -->
+    <div class="course-recommendation-section">
+      <h2>More Courses Like This</h2>
+
+      <div class="course-grid">
+        <div class="course-card">
+          <img src="./assets/courseImage.jpg" alt="Course Thumbnail" />
+          <h4>Beginner's Guide to Design</h4>
+          <p class="instructor">By Ronald Richards</p>
+          <div class="rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span>(1200 Ratings)</span>
+          </div>
+          <p class="meta">22 Total Hours. 155 Lectures. Beginner</p>
+          <strong>$149.9</strong>
+        </div>
+        <div class="course-card">
+          <img src="./assets/courseImage.jpg" alt="Course Thumbnail" />
+          <h4>Beginner's Guide to Design</h4>
+          <p class="instructor">By Ronald Richards</p>
+          <div class="rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span>(1200 Ratings)</span>
+          </div>
+          <p class="meta">22 Total Hours. 155 Lectures. Beginner</p>
+          <strong>$149.9</strong>
+        </div>
+        <div class="course-card">
+          <img src="./assets/courseImage.jpg" alt="Course Thumbnail" />
+          <h4>Beginner's Guide to Design</h4>
+          <p class="instructor">By Ronald Richards</p>
+          <div class="rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><span>(1200 Ratings)</span>
+          </div>
+          <p class="meta">22 Total Hours. 155 Lectures. Beginner</p>
+          <strong>$149.9</strong>
+        </div>
+        <div class="course-card">
+          <img src="./assets/courseImage.jpg" alt="Course Thumbnail" />
+          <h4>Beginner's Guide to Design</h4>
+          <p class="instructor">By Ronald Richards</p>
+          <div class="rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><span>(1200 Ratings)</span>
+          </div>
+          <p class="meta">22 Total Hours. 155 Lectures. Beginner</p>
+          <strong>$149.9</strong>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer section -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- Column 1: Logo & Description -->
+        <div class="footer-col footer-col-1">
+          <div class="footer-brand">
+            <img src="assets/logo.png" alt="Byway Logo" class="footer-logo" />
+            <span class="footer-logo-text">Byway</span>
+          </div>
+
+          <p>
+            Empowering learners through accessible and engaging online
+            education.
+          </p>
+          <p>
+            Oracle is a leading online learning platform dedicated to providing
+            high-quality, flexible, and affordable educational experiences.
+          </p>
+        </div>
+
+        <!-- Column 2: Get Help -->
+        <div class="footer-col">
+          <h4>Get Help</h4>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Latest Articles</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Programs -->
+        <div class="footer-col">
+          <h4>Programs</h4>
+          <ul>
+            <li><a href="#">Art & Design</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">IT & Software</a></li>
+            <li><a href="#">Languages</a></li>
+            <li><a href="#">Programming</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact & Icons -->
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <p>Address: 123 Main Street, Anytown, CA 12345</p>
+          <p>Tel: (+123) 456-7890</p>
+          <p>Mail: Oracleedu@webkul.in</p>
+          <div class="social-icons">
+            <img src="./assets/icon/facebook.png" alt="Facebook" />
+            <img src="./assets/icon/github.png" alt="GitHub" />
+            <img src="./assets/icon/google.png" alt="Google" />
+            <img src="./assets/icon/x.png" alt="X" />
+            <img src="./assets/icon/microsoft.png" alt="Microsoft" />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

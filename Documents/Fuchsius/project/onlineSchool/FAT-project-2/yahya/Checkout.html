@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout - Oracle</title>
+    <link rel="stylesheet" href="styles/Checkout.css" />
+    <link rel="stylesheet" href="styles/sharedStyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav-container">
+        <div class="nav-left">
+          <a href="/" class="logo">
+            <div class="logo-wrapper">
+              <img src="assets/logo.png" alt="Oracle Logo" />
+              <h1 class="logo-text">Oracle</h1>
+            </div>
+          </a>
+          <div class="categories">Categories</div>
+          <div class="search-bar">
+            <i class="fas fa-search search-icon"></i>
+            <input type="search" placeholder="Search courses" />
+          </div>
+        </div>
+        <div class="nav-right">
+          <a href="#" class="teach-link">Teach on Oracle</a>
+
+          <div class="nav-icons">
+            <i class="far fa-heart"></i>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="far fa-bell"></i>
+            <div class="user-profile">J</div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="page-wrapper checkout-page">
+      <main class="checkout-content">
+        <div class="breadcrumb">
+          <h1>Checkout Page</h1>
+          <a href="/details">Details</a> <a href="/cart">Shopping Cart</a>
+          <span>Checkout</span>
+        </div>
+
+        <div class="checkout-layout">
+          <form id="checkout-form-static">
+            <div class="form-row form-row-split">
+              <div class="form-group">
+                <label for="country">Country</label>
+                <input
+                  type="text"
+                  id="country"
+                  name="country"
+                  placeholder="Enter Country"
+                  class="form-input"
+                />
+              </div>
+              <div class="form-group">
+                <label for="state">State/Union Territory</label>
+                <input
+                  type="text"
+                  id="state"
+                  name="state"
+                  placeholder="Enter State"
+                  class="form-input"
+                />
+              </div>
+            </div>
+
+            <div class="payment-method-section">
+              <h3 class="payment-title">Payment Method</h3>
+
+              <div class="payment-options-container">
+                <div class="payment-option-static selected">
+                  <div class="payment-option-header">
+                    <input
+                      type="radio"
+                      id="card"
+                      name="paymentMethod"
+                      value="card"
+                      checked
+                    />
+                    <label for="card">
+                      <span class="payment-label-text">Credit/Debit Card</span>
+                      <span class="payment-logos">
+                        <img src="/assets/icon/card.png" alt="Visa" />
+                      </span>
+                    </label>
+                  </div>
+                  <div class="card-fields-visible">
+                    <div class="form-group">
+                      <label for="cardName">Name of Card</label>
+                      <input
+                        type="text"
+                        id="cardName"
+                        name="cardName"
+                        placeholder="Name of card"
+                        class="form-input"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="cardNumber">Card Number</label>
+                      <input
+                        type="text"
+                        id="cardNumber"
+                        name="cardNumber"
+                        placeholder="Card Number"
+                        class="form-input"
+                      />
+                    </div>
+                    <div class="form-row form-row-split">
+                      <div class="form-group">
+                        <label for="expiryDate">Expiry Date</label>
+                        <input
+                          type="text"
+                          id="expiryDate"
+                          name="expiryDate"
+                          placeholder="MM/YY"
+                          class="form-input"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="cvc">CVC/CVV</label>
+                        <input
+                          type="text"
+                          id="cvc"
+                          name="cvc"
+                          placeholder="CVC/CVV"
+                          class="form-input"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="payment-option-static">
+                  <div class="payment-option-header">
+                    <input
+                      type="radio"
+                      id="paypal"
+                      name="paymentMethod"
+                      value="paypal"
+                    />
+                    <label for="paypal">
+                      <span class="payment-label-text">PayPal</span>
+                      <span class="payment-logos">
+                        <img src="assets/icon/paypal.png" alt="PayPal" />
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+          <aside class="order-details-column">
+            <div class="order-summary-widget">
+              <h2>Order Details</h2>
+
+              <div class="item-summary-card">
+                <img
+                  src="assets/coursePRV.png"
+                  alt="Course Thumbnail"
+                  class="item-image"
+                />
+                <div class="item-details">
+                  <span class="item-category">Design</span>
+                  <h4 class="item-title">
+                    Introduction to User Experience Design
+                  </h4>
+                  <p class="item-meta">155 Lectures . 22 Total Hours</p>
+                  <p class="item-price">$45.00</p>
+                </div>
+              </div>
+
+              <button class="coupon-button">
+                <i class="fa-solid fa-percent"></i>
+                <span>APPLY COUPON CODE</span>
+              </button>
+
+              <div class="price-breakdown">
+                <div class="price-line">
+                  <span class="label">Price</span>
+                  <span class="value">$300.00</span>
+                </div>
+                <div class="price-line">
+                  <span class="label">Discount</span>
+                  <span class="value">-$10.00</span>
+                </div>
+                <div class="price-line">
+                  <span class="label">Tax</span>
+                  <span class="value">$20.00</span>
+                </div>
+                <hr class="divider" />
+                <div class="price-line total">
+                  <span class="label">Total</span>
+                  <span class="value">$290.00</span>
+                </div>
+              </div>
+
+              <button
+                class="btn-checkout-summary"
+                type="submit"
+                form="checkout-form"
+              >
+                Proceed to Checkout
+              </button>
+            </div>
+          </aside>
+        </div>
+      </main>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- Column 1: Logo & Description -->
+        <div class="footer-col footer-col-1">
+          <div class="footer-brand">
+            <img src="assets/logo.png" alt="Byway Logo" class="footer-logo" />
+            <span class="footer-logo-text">Byway</span>
+          </div>
+
+          <p>
+            Empowering learners through accessible and engaging online
+            education.
+          </p>
+          <p>
+            Oracle is a leading online learning platform dedicated to providing
+            high-quality, flexible, and affordable educational experiences.
+          </p>
+        </div>
+
+        <!-- Column 2: Get Help -->
+        <div class="footer-col">
+          <h4>Get Help</h4>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Latest Articles</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Programs -->
+        <div class="footer-col">
+          <h4>Programs</h4>
+          <ul>
+            <li><a href="#">Art & Design</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">IT & Software</a></li>
+            <li><a href="#">Languages</a></li>
+            <li><a href="#">Programming</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact & Icons -->
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <p>Address: 123 Main Street, Anytown, CA 12345</p>
+          <p>Tel: (+123) 456-7890</p>
+          <p>Mail: Oracleedu@webkul.in</p>
+          <div class="social-icons">
+            <img src="./assets/icon/facebook.png" alt="Facebook" />
+            <img src="./assets/icon/github.png" alt="GitHub" />
+            <img src="./assets/icon/google.png" alt="Google" />
+            <img src="./assets/icon/x.png" alt="X" />
+            <img src="./assets/icon/microsoft.png" alt="Microsoft" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart - Oracle</title>
+    <link rel="stylesheet" href="styles/Cart.css" />
+    <link rel="stylesheet" href="styles/sharedStyle.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav-container">
+        <div class="nav-left">
+          <a href="/" class="logo">
+            <div class="logo-wrapper">
+              <img src="assets/logo.png" alt="Oracle Logo" />
+              <h1 class="logo-text">Oracle</h1>
+            </div>
+          </a>
+          <div class="categories">Categories</div>
+          <div class="search-bar">
+            <i class="fas fa-search search-icon"></i>
+            <input type="search" placeholder="Search courses" />
+          </div>
+        </div>
+        <div class="nav-right">
+          <a href="#" class="teach-link">Teach on Oracle</a>
+
+          <div class="nav-icons">
+            <i class="far fa-heart"></i>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="far fa-bell"></i>
+            <div class="user-profile">J</div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="cart-header">
+        <h2>Shopping Cart</h2>
+        <p class="breadcrumb">
+          Categories > Details > <span>Shopping Cart</span>
+        </p>
+      </div>
+      <p class="cart-count">1 Course in cart</p>
+
+      <div class="cart-content">
+        <div class="cart-items">
+          
+          <div class="cart-item">
+            <img src="assets/coursePRV.png" alt="Course Image" />
+            <div class="item-details">
+              <h4>Introduction to User Experience Design</h4>
+              <p>By John Doe</p>
+              <div class="course-info-line">
+                <span class="rating">
+                  4.6
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span class="rating-text">(250 ratings)</span>
+                </span>
+                <span class="course-meta"
+                  >| 22 Total Hours. 155 Lectures. All levels</span
+                >
+              </div>
+
+              <div class="actions">
+                <a href="#">Save for later</a>
+                <a href="#" class="remove">Remove</a>
+              </div>
+            </div>
+            <div class="price">$45.00</div>
+          </div>
+          <div class="cart-item">
+            <img src="assets/coursePRV.png" alt="Course Image" />
+            <div class="item-details">
+              <h4>Introduction to User Experience Design</h4>
+              <p>By John Doe</p>
+              <div class="course-info-line">
+                <span class="rating">
+                  4.6
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span class="rating-text">(250 ratings)</span>
+                </span>
+                <span class="course-meta"
+                  >| 22 Total Hours. 155 Lectures. All levels</span
+                >
+              </div>
+              <div class="actions">
+                <a href="#">Save for later</a>
+                <a href="#" class="remove">Remove</a>
+              </div>
+            </div>
+            <div class="price">$45.00</div>
+          </div>
+          <div class="cart-item">
+            <img src="assets/coursePRV.png" alt="Course Image" />
+            <div class="item-details">
+              <h4>Introduction to User Experience Design</h4>
+              <p>By John Doe</p>
+              <div class="course-info-line">
+                <span class="rating">
+                  4.6
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span class="rating-text">(250 ratings)</span>
+                </span>
+                <span class="course-meta"
+                  >| 22 Total Hours. 155 Lectures. All levels</span
+                >
+              </div>
+              <div class="actions">
+                <a href="#">Save for later</a>
+                <a href="#" class="remove">Remove</a>
+              </div>
+            </div>
+            <div class="price">$45.00</div>
+          </div>
+
+        </div>
+
+        <div class="order-summary">
+          <h3>Order Details</h3>
+          <div class="summary-line">
+            <span>Price</span>
+            <span>$300.00</span>
+          </div>
+          <div class="summary-line">
+            <span>Discount</span>
+            <span class="discount">-$10.00</span>
+          </div>
+          <div class="summary-line">
+            <span>Tax</span>
+            <span>$20.00</span>
+          </div>
+          <div class="summary-line total">
+            <span>Total</span>
+            <span>$290.00</span>
+          </div>
+          <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- Column 1: Logo & Description -->
+        <div class="footer-col footer-col-1">
+          <div class="footer-brand">
+            <img src="assets/logo.png" alt="Byway Logo" class="footer-logo" />
+            <span class="footer-logo-text">Byway</span>
+          </div>
+
+          <p>
+            Empowering learners through accessible and engaging online
+            education.
+          </p>
+          <p>
+            Oracle is a leading online learning platform dedicated to providing
+            high-quality, flexible, and affordable educational experiences.
+          </p>
+        </div>
+
+        <!-- Column 2: Get Help -->
+        <div class="footer-col">
+          <h4>Get Help</h4>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Latest Articles</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Programs -->
+        <div class="footer-col">
+          <h4>Programs</h4>
+          <ul>
+            <li><a href="#">Art & Design</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">IT & Software</a></li>
+            <li><a href="#">Languages</a></li>
+            <li><a href="#">Programming</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact & Icons -->
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <p>Address: 123 Main Street, Anytown, CA 12345</p>
+          <p>Tel: (+123) 456-7890</p>
+          <p>Mail: Oracleedu@webkul.in</p>
+          <div class="social-icons">
+            <img src="./assets/icon/facebook.png" alt="Facebook" />
+            <img src="./assets/icon/github.png" alt="GitHub" />
+            <img src="./assets/icon/google.png" alt="Google" />
+            <img src="./assets/icon/x.png" alt="X" />
+            <img src="./assets/icon/microsoft.png" alt="Microsoft" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
